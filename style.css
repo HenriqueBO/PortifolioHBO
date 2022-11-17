@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Source+Code+Pro&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --color-scroll: #000000b7;
+    --color-ground: linear-gradient(65deg, #cfd9df, #e2ebf0);
+    --color-header: rgb(255, 255, 255);
+    --color-items-header: black;
+    --color-title: black;
+    --color-subtitle: rgb(39, 39, 39)
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-ground);
+    border-radius: 200px;
+}
+
+
+body{
+    font-size: 100%;
+    background: var(--color-ground);
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-header);
+    /* box-shadow: 0px 20px 20px 0px rgba(255, 255, 255, 1); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    color: var(--color-items-header);
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    transition: 0.2s;
+}
+
+.logo:hover{
+    color: #97d2ec;
+}
+
+.menu{
+    display: flex;
+    gap: 18px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.item-menu{
+    font-family: 'Source Code Pro', monospace;
+    color: var(--color-items-header);
+    font-weight: 400;
+    font-size: 18px;
+    padding: 6px 10px;
+    transition: 0.2s;
+}
+
+.item-menu:hover{
+    /* box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px; */
+    color: #97d2ec;
+}
+
+/* .content{
+    margin-bottom: 48px;
+    border-top: 0.4px solid rgba(0, 0, 0, 0.26);
+} */
+
+.content-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.content-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 380px 0;
+}
+
+.title{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--color-title)
+}
+
+.sub-title{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--color-subtitle);
+}
+
+.button{
+    background: linear-gradient(90deg, #2600ffa1, #2600ff27);
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.20);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.buttona{
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.button:hover{
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.50);
+    background: linear-gradient(90deg, #2600ffa1, #2600ffa1);
+}
+
+.img{
+    padding: 100px 0;
+    height: 600px;
+}
+
+.content-second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+    padding-bottom: 425px;
+}
+
+.second-title{
+    border-top:0.4px solid rgba(0, 0, 0, 0.26);
+    padding-top: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    color: black;
+    margin-bottom: 15px;
+    
+}
+
+.paragraph{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+}
+
+.ul-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: square;
+}
+
+.compt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0px; */
+    /* border-top: 0.4px solid rgba(0, 0, 0, 0.26); */
+    /* height: 100vh; */
+    padding-bottom: 250px;
+
+}
+
+.compt-title{
+    border-top:0.4px solid rgba(0, 0, 0, 0.26);
+    padding-top: 280px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 45px;
+}
+
+.compt-list{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+}
+
+.baseboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-top: 0.4px solid rgba(0, 0, 0, 0.26);
+    height: 100vh;
+}
+
+.base{
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    align-items: center;
+    gap: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 40px ;
+    height: 20px ;
+    appearance: none;
+    background: #353535;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+}
+
+input:checked[type="checkbox"]{
+    background-color: rgb(212, 212, 212); 
+}
+
+input[type="checkbox"]:before{
+    content:'';
+    width: 20px;
+    height: 20px;
+    background-color: #edf3f1;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.24) ;
+    transform: scale(1.1);
+    top: 0;
+    left: 0;
+    transition: .4s;
+    transform: scale(0.9s);
+}
+
+input:checked[type="checkbox"]:before{
+    left: 20px;
+    /* background-color: black; */
+
+}
