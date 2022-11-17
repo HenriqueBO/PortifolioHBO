@@ -8,7 +8,7 @@
     --color-title: black;
     --color-subtitle: rgb(39, 39, 39)
 }
-    
+
 *{
     margin: 0;
     padding: 0;
@@ -92,13 +92,15 @@ body{
     align-items: center;
     justify-content: space-around;
     gap: 10px;
+    height: 100vh;
+        /* padding: 100px; */
 }
 
 .content-principal-escrito{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 380px 0;
+    /* padding: 380px 0; */
 }
 
 .title{
@@ -142,7 +144,7 @@ body{
 }
 
 .img{
-    padding: 100px 0;
+    padding: 100px;
     height: 600px;
 }
 
