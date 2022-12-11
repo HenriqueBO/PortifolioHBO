@@ -143,9 +143,8 @@ body{
     background: linear-gradient(90deg, #2600ffa1, #2600ffa1);
 }
 
-.img{
-    padding: 100px;
-    height: 600px;
+.img {
+    padding: 0;
 }
 
 .content-second{
@@ -220,6 +219,7 @@ body{
     gap: 15px;
     border-top: 0.4px solid rgba(0, 0, 0, 0.26);
     height: 100vh;
+    
 }
 
 .base{
@@ -230,8 +230,8 @@ body{
     color: black;
     align-items: center;
     gap: 10px;
-}
-
+    text-decoration: none;
+    
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
@@ -276,4 +276,16 @@ input:checked[type="checkbox"]:before{
     left: 20px;
     /* background-color: black; */
 
+}
+
+@media (min-width: 576px) {
+    :root {
+        --screenSize: "small";
+        --containerSize: 550px;
+    }
+}
+
+.baseboard {
+    text-decoration: none;
+    color: black;
 }
